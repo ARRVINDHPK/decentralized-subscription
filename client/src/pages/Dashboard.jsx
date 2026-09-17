@@ -34,9 +34,9 @@ export function Dashboard() {
           const sevenDaysSec = 7 * 24 * 60 * 60;
 
           for (const s of subs) {
-            committedWei += s.amountPaid;
             const active = await isSubscriptionActive(account, s.planId);
             if (active) {
+              committedWei += s.amountPaid;
               activeCounter++;
               if (s.expiryTime > nowSec && s.expiryTime - nowSec < sevenDaysSec) {
                 expiringCounter++;
