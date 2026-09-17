@@ -1,0 +1,25 @@
+{
+  "name": "decentralized-subscription",
+  "version": "1.0.0",
+  "description": "Decentralized Subscription Payment System built with Solidity, Hardhat, ethers.js, React, Vite, and Tailwind CSS.",
+  "scripts": {
+    "blockchain": "cd blockchain && npx hardhat node",
+    "compile": "cd blockchain && npx hardhat compile",
+    "deploy": "cd blockchain && npx hardhat run scripts/deploy.js --network localhost",
+    "test": "cd blockchain && npx hardhat test",
+    "client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build"
+  },
+  "keywords": [
+    "blockchain",
+    "dapp",
+    "solidity",
+    "hardhat",
+    "react",
+    "ethers",
+    "metamask",
+    "subscription"
+  ],
+  "author": "",
+  "license": "MIT"
+}
